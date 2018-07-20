@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BF051AC-08D2-4F39-90DB-EE49D1182765}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DarkestAssistant</RootNamespace>
+    <AssemblyName>DarkestAssistant</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ptc.99millerw\Desktop\Finished DAT\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C155E1F606096A4E1FEEEFDD64CC7C60D72F2459</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DarkestAssistant_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Courtyard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courtyard.Designer.cs">
+      <DependentUpon>Courtyard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cove.Designer.cs">
+      <DependentUpon>Cove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoveBoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoveBoss.Designer.cs">
+      <DependentUpon>CoveBoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ruins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ruins.Designer.cs">
+      <DependentUpon>Ruins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuinsBosses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuinsBosses.Designer.cs">
+      <DependentUpon>RuinsBosses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warrens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warrens.Designer.cs">
+      <DependentUpon>Warrens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarrensBoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarrensBoss.Designer.cs">
+      <DependentUpon>WarrensBoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weald.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Weald.Designer.cs">
+      <DependentUpon>Weald.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WealdBosses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WealdBosses.Designer.cs">
+      <DependentUpon>WealdBosses.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Courtyard.resx">
+      <DependentUpon>Courtyard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cove.resx">
+      <DependentUpon>Cove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ruins.resx">
+      <DependentUpon>Ruins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuinsBosses.resx">
+      <DependentUpon>RuinsBosses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warrens.resx">
+      <DependentUpon>Warrens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarrensBoss.resx">
+      <DependentUpon>WarrensBoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weald.resx">
+      <DependentUpon>Weald.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WealdBosses.resx">
+      <DependentUpon>WealdBosses.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DarkestAssistant_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antivenom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bandage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HolyWater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicinal_Herbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skeleton_Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Abomination_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Antiquarian_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Arbalest_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Bounty_hunter_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Crusader_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Grave_robber_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Hellion_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Highwayman_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Hound_master_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Jester_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Leper_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Man-at-arms_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Occultist_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Plague_doctor_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Shieldbreaker_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75px-Vestal_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flagellant_portrait_roster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bone_Courtier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bone_Courtierflip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151239697211161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading_screen_Crypts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading_screen_Weald.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading_screen_Warrens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800px-Loading_screen_Cove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Blood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Courtyard.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Necromancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prophet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pewl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pewm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pews.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Canon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwinePrince.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
